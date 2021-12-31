@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>PixelArt Maker</title>
+    <link href="pixelart-maker.css" type="text/css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+</head>
+
+<body>
+    <audio class="mySong">
+        <source src="Assets/16-Bit Fantasy RPG - Adventure Music 1.mp3" type="audio/mp3">
+    </audio>
+
+    <div>
+        <button onclick="toggle()" id="slideButton">how to play</button>
+        <button onclick="exit()" class="exitbutton"></button>
+        <button onclick="music()" id="musicButton">MUSIC</button>
+    </div>
+    <div id="instructions">Instructions in progress</div> 
+
+
+<div class="frame">
+    <div class="camera">
+        <div class="navbar">
+            <button class="btn"> Reset </button>
+            <input type="color" value="#49D3CC" class="color">
+            <input type="number" class="size" value="30">
+        </div>
+
+        <div class="container">
+        </div>
+    </div>
+</div>
+</body>
+
+<script src="pixelart-maker.js"></script>
+<script src="01togglebutton.js"></script>
+</html>
+
+

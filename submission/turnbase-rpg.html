@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BOX ARENA FIGHT</title>
+    <link href="turnbase-rpg.css" type="text/css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+</head>
+
+<body>
+    <audio class="mySong">
+        <source src="Assets/16-Bit Fantasy RPG - Adventure Music 1.mp3" type="audio/mp3">
+    </audio>
+
+    <div>
+        <button onclick="toggle()" id="slideButton">how to play</button>
+        <button onclick="exit()" class="exitbutton"></button>
+        <button onclick="music()" id="musicButton">MUSIC</button>
+    </div>
+    <div id="instructions">Instructions in progress</div> 
+   
+    <div class="frame">
+        <div class="health">
+            <div id="hp1"></div>
+            <div id="hp2"></div>
+        </div>
+
+        <br><br><br>
+
+        <div class="battlescreen">
+                <div id="mon1"></div>
+                <div id="mon2"></div>
+        </div>
+
+        <br>
+        <div class="playerscreen">
+            <input type="button" class="btn" id="m0">
+            <input type="button" class="btn" id="m1">
+            <input type="button" class="btn" id="m2">
+            <input type="button" class="btn" id="m3">
+            <p id="comment"></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+<script src="turnbase-rpg.js"></script>
+<script src="01togglebutton.js"></script>
+</html>

@@ -1,0 +1,171 @@
+/*CSS variables*/
+:root {
+    --pixel-size: 2px;
+    --grid-cell: calc( var(--pixel-size) * 16);
+    --bg: #9fa7e4;
+ }
+ @media( min-width: 700px ) {
+    :root {
+       --pixel-size: 3px;
+    }
+ }
+ @media( min-width: 1000px ) {
+    :root {
+       --pixel-size: 4px;
+    }
+ }
+ 
+ html, body {
+    height: 100%;
+ }
+
+ body {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+ }
+
+.frame {
+    background-color: #F1C40F;
+    width: calc(var(--pixel-size) * 160);
+    height: calc(var(--pixel-size) * 144);
+    outline: var(--pixel-size) solid #fff;
+    z-index:1; 
+    display: flex;
+    justify-content: center;
+ }
+
+
+.navbar, .container{
+   background-color: rgb(28, 28, 29);
+   width: 600px;
+   border-radius: 3px;
+}
+
+.navbar{
+   padding: 1em;
+   margin-bottom: 1em;
+   margin-top: 4px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.btn, input{
+   height: 35px;
+   padding: 0 1em;
+}
+
+.color{
+   padding: 0 .25em;
+   width: 100px;
+   margin: 0 1em;
+}
+
+.container{
+   --size: 4;
+   height: 480px;
+   width: 500px;
+   display: grid;
+   grid-template-columns: repeat(var(--size), 1fr);
+   grid-template-rows: repeat(var(--size), 1fr);
+   gap: 3px;
+   padding: 3px; 
+}
+
+.pixel{
+   background-color: rgb(61, 61, 61);
+   border-radius: 2px;
+}
+
+
+
+
+
+
+
+#musicButton {
+   border: 0;
+   margin-top: 12px;
+   margin-left: 15px;
+   padding-right: 7px;
+   padding-top: 7px;
+   border-radius: 5px;
+   padding-left: 18px;
+   top: 50px;
+   left: 1240px; 
+   cursor: pointer;
+   position: absolute;
+   z-index: 999;
+}
+
+.exitbutton{
+    background-color: white;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 12px;
+    margin-left: 15px;
+    padding-right: 7px;
+    padding-top: 7px;
+    padding-left: 18px; 
+    cursor: pointer;
+    position: absolute;
+    z-index: 98;
+    width: 50px;
+    height: 50px;
+    top: 15px;
+    left: 950px; 
+   }    
+.exitbutton:after {
+      position: absolute;
+      top: -25px;
+      bottom: 0;
+      left: -2px;
+      right: 0;
+      content: "\274c";
+      font-size: 40px;
+      color: #fff;
+      line-height: 100px;
+      text-align: center;
+}
+
+#slideButton {
+    border: 0;
+    margin-top: 12px;
+    margin-left: 15px;
+    padding-right: 7px;
+    padding-top: 7px;
+    border-radius: 5px;
+    padding-left: 18px;
+    top: 10px;
+    left: 1240px; 
+    cursor: pointer;
+    position: absolute;
+    z-index: 999;
+}
+
+#slideButton:focus {
+    outline: none;
+  }
+  
+  #slideButton:hover {
+    background-color: rgba(100,100,100,0.1);
+    transition:       ease 0.6s;
+  }
+
+
+ #instructions {
+    background-color: #F1C40F;
+    pointer-events: none;
+    padding: 5px;
+    position: absolute;
+    width: 1500px;
+    height: 1000px;
+    top: -1500px;
+    left: 0px;
+    transition: top 1s;
+    z-index: 99;
+}
+
